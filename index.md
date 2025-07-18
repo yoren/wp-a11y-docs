@@ -157,43 +157,13 @@ Some text
     - level 3 item (ul)
 - level 1 item (ul)
 
-### And a task list
-
-- [ ] Hello, this is a TODO item
-- [ ] Hello, this is another TODO item
-- [x] Goodbye, this item is done
-
-### Nesting task lists
-
-- [ ] level 1 item (task)
-    - [ ] level 2 item (task)
-    - [ ] level 2 item (task)
-- [ ] level 1 item (task)
-- [ ] level 1 item (task)
-
-### Nesting a ul in a task list
-
-- [ ] level 1 item (task)
-    - level 2 item (ul)
-    - level 2 item (ul)
-- [ ] level 1 item (task)
-- [ ] level 1 item (task)
-
-### Nesting a task list in a ul
-
-- level 1 item (ul)
-    - [ ] level 2 item (task)
-    - [ ] level 2 item (task)
-- level 1 item (ul)
-- level 1 item (ul)
-
 ### Small image
 
-![](../../assets/images/small-image.jpg)
+![](assets/images/small-image.jpg)
 
 ### Large image
 
-![](../../assets/images/large-image.jpg)
+![](assets/images/large-image.jpg)
 
 "[Wroclaw University Library digitizing rare archival texts](https://www.flickr.com/photos/97810305@N08/9401451269)" by [j_cadmus](https://www.flickr.com/photos/97810305@N08) is marked with [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=openverse).
 
