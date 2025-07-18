@@ -13,11 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: WP Accessibility Knowledge Base
 description: Learn accessibility for WordPress.
-baseurl: "" # the sub path of your site, e.g. /blog
-url: "https://wpaccessibility.org" # the base hostname & protocol for your site, e.g. http://example.com
-repository: wpaccessibility/wp-a11y-docs # for github-metadata
+repository: rianrietveld/wp-a11y-docs # for github-metadata
+
+# Local env
+# title: Local WP Accessibility Knowledge Base
+# baseurl: "" # the sub path of your site, e.g. /blog
+# url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site, e.g. http://example.com
+
+# prod env
+title: WP Accessibility Knowledge Base
+baseurl: "wp-a11y-docs" # the sub path of your site, e.g. /blog
+url: "https://rianrietveld.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+
+
 
 permalink: pretty
 
