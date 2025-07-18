@@ -65,6 +65,9 @@ exclude:
   # theme test code
   - fixtures/
 
+# Set a path/url to a favicon that will be displayed by the browser
+favicon_ico: "/assets/images/favicon.ico"
+
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: true
