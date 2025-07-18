@@ -3,5 +3,5 @@ _site
 assets/js/vendor/lunr.min.js
 assets/js/search-data.json
 assets/js/zzzz-search-data.json
-assets/js/just-the-docs.js
+assets/js/wp-a11y-docs.js
 *.md

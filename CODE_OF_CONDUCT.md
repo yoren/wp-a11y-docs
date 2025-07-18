@@ -1,3 +1,8 @@
+---
+title: Contributor Covenant Code of Conduct
+parent: How to contribute
+---
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge

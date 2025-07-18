@@ -8,12 +8,12 @@ nav_order: 2
 
 # Accessibility statement
 
-We aim for the tlatest recommended version of WCAG, th at this moment that os WCAG 2.2 AA etc.
+We aim for the latest recommended version of WCAG, at this moment that is [WCAG 2.2 AA](https://www.w3.org/WAI/WCAG22/quickref/) etc.
 
-## Found an problem?
+## Found a problem?
 - contact us in Slack
 - create an issue in GitHub
 - mail ...
 
 ## Known issues:
-- Code blocks should for focusable
+- ...
