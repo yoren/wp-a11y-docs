@@ -18,7 +18,7 @@ Follow the [progress in GitHub](https://github.com/rianrietveld/wp-a11y-docs).
 The theme WP A11y Docs is based on [Just The Docs](https://just-the-docs.github.io/just-the-docs/), and modified to make the site accessible (work in progress).
 
 {: .warning }
-> The text is dummy text, just to show what the site san do, taken from the Just The Docs theme. This website still has a11y issues, like missing screen reader feedback on the search option and the color contrast of code elements. Also, some styling needs to be improved on. Work in progress.
+> The text is dummy text, just to show what the site can do, taken from the Just The Docs theme. This website still has a11y issues, like missing screen reader feedback on the search option and the color contrast of code elements. Also, some styling needs to be improved on and the breadcrumbs are broken. Work in progress.
 
 
 ## Markdown kitchen sink
