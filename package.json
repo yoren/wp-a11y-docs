@@ -1,0 +1,44 @@
+{
+  "name": "wp-a11y-docs",
+  "version": "0.0.1",
+  "description": "Jekyll theme for the WP Accessibility Knowledge Base",
+  "repository": "rianrietveld/wp-a11y-docs",
+  "license": "MIT",
+  "bugs": "https://github.com/rianrietveld/wp-a11y-docs/issues",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.6.0",
+    "stylelint": "^16.21.0",
+    "stylelint-config-standard-scss": "^14.0.0"
+  },
+  "scripts": {
+    "lint": "npm-run-all --parallel --continue-on-error lint:*",
+    "lint:css": "stylelint '**/*.scss'",
+    "lint:formatting": "prettier --check '**/*.{scss,js,json}'",
+    "format": "prettier --write '**/*.{scss,js,json}'",
+    "test": "npm run lint"
+  },
+  "stylelint": {
+    "ignoreFiles": [
+      "assets/css/styles.scss",
+    ],
+    "extends": [
+      "stylelint-config-standard-scss"
+    ],
+    "rules": {
+      "alpha-value-notation": null,
+      "at-rule-empty-line-before": null,
+      "color-function-notation": null,
+      "media-feature-range-notation": "prefix",
+      "no-descending-specificity": null,
+      "scss/no-global-function-names": null
+    }
+  },
+  "prettier": {
+    "endOfLine": "lf",
+    "semi": false,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "es5"
+  }
+}

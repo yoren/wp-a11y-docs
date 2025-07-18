@@ -1,0 +1,8 @@
+
+The text of the documentation is created by the WordPress and Accessibility community worldwide.
+This documentation is licensed as [Creative Commons Zero 1.0 Universal (CC0-1.0)](
+https://creativecommons.org/publicdomain/zero/1.0/).
+
+Theme of this website is based on the Just The Docs Jekyll theme.
+Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+Copyright (c) 2016 Patrick Marsceill .
