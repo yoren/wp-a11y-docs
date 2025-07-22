@@ -161,6 +161,16 @@
   height: 100%;
   padding: $gutter-spacing-sm;
   align-items: center;
+
+  span {
+    padding-right: 0.5em;
+    color: $link-color;
+  }
+
+  & :hover,
+  & :focus {
+    text-decoration: underline;
+  }
 }
 
 @include mq(md) {
