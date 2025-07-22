@@ -26,9 +26,7 @@ title: WP Accessibility Knowledge Base
 baseurl: "/wp-a11y-docs" # the sub path of your site, e.g. /blog
 url: "https://rianrietveld.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
-
-
-permalink: pretty
+permalink: none
 
 defaults:
   - scope:
@@ -146,6 +144,10 @@ callouts:
   warning:
     title: Warning
     color: red
+
+collections:
+  articles:
+    output: true
 
 plugins:
   - jekyll-seo-tag
