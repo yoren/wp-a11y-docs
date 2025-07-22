@@ -1,15 +1,10 @@
 ---
 layout: default
 title:  Articles
-date:   2022-09-06
-authors: steve-fenton
-description: Articles about Jekyll Boilerplate.
-nav-level: 1
-nav-order: 10000
-# Don't use permalink on list pages
+description: Articles on wp a11y docs.
 ---
-<main id="site-main">
-  <h1>{{ 'articles' | t: 'title' }}</h1>
+
+  <h1>Articles </h1>
   {%- if site.page_size != nil %}
     {% assign posts = paginator.posts %}
   {% else %}
@@ -65,4 +60,4 @@ nav-order: 10000
   </nav>
   {% endif %}
   {%- endif -%}
-</main>
+
