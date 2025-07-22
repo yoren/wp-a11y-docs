@@ -20,8 +20,10 @@ layout: table_wrappers
     {% include components/header.html %}
 
     <div class="main-content-wrap">
-      {% include components/breadcrumbs.html %}
 
+      {% if page.url != "/" %}
+        {% include components/breadcrumbs.html %}
+      {% endif %}
       <div id="main-content" class="main-content">
 
         <main>
