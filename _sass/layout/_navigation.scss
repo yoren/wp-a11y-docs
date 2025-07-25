@@ -260,3 +260,16 @@
   width: auto;
 }
 
+.post-paging {
+
+  ul {
+    display: inline-block;
+    margin: 1em 0;
+
+    li {
+      margin: 0;
+      padding: 1em;
+      display: inline;
+    }
+  }
+}

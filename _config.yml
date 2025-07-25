@@ -35,6 +35,9 @@ defaults:
     values:
       layout: "default"
 
+paginate: 5
+paginate_path: "/articles/page:num/"
+
 exclude:
   # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
   - .sass-cache/
@@ -155,6 +158,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-sass-converter
+  - jekyll-paginate
 
 kramdown:
   syntax_highlighter_opts:

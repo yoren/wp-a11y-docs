@@ -2,62 +2,68 @@
 layout: default
 title:  Articles
 description: Articles on wp a11y docs.
+nav_order: 2
 ---
 
   <h1>Articles </h1>
+
   {%- if site.page_size != nil %}
     {% assign posts = paginator.posts %}
   {% else %}
     {% assign posts = site.posts %}
   {% endif %}
+
   {%- if posts.size > 0 -%}
-  <ul class="post-list">
+
     {%- assign date_format = site.date_format | default: '%b %-d, %Y' -%}
     {%- for post in posts -%}
-    <li class="list-item" data-destination="{{ post.url | relative_url }}">
-      <article>
-      {%- if post.banner-image -%}
-      <img src="{{ post.banner-image }}" alt="{{ post.banner-image-alt }}" {% unless forloop.first %}loading="lazy"{% endunless %} />
-      {%- endif -%}
-      <div class="list-item-content">
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+      <article class="post-page">
+
         <h2>
           <a href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h2>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt | default: post.description }}
-        {%- endif -%}
-      </div>
+
+        <p><span class="post-meta">{{ post.date | date: date_format }}</span></p>
+        <p>{{ post.excerpt | default: post.description }}</p>
+
       </article>
-    </li>
+
     {%- endfor -%}
-  </ul>
+
 
 {% if paginator.total_pages > 1 %}
-  <nav class="post-paging" aria-label="{{ 'aria' | t: 'paging' }}">
+
+  <nav class="post-paging" aria-label="pagination">
+    <ul>
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; {{ 'articles' | t: 'previous' }}</a>
-    {% else %}
-      <span>&laquo; {{ 'articles' | t: 'previous' }}</span>
+     <li><a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous page</a></li>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
+
       {% if page == paginator.page %}
-        <em>{{ page }}</em>
+        <li aria-current="page">Page {{ page }}</li>
+
+      {% elsif page == 1 %}
+        <li><a href="{{ site.paginate_path | relative_url | replace: 'page:num/', '' }}">Page {{ page }}</a></li>
+
       {% else %}
         {% assign page_one_link = '/' | append: site.paginate_page | append: '1' | append: '/' %}
-        <a href="{{ site.paginate_path | relative_url | replace: ':num', page | replace: page_one_link, '/' }}">{{ page }}</a>
+
+        <li><a href="{{ site.paginate_path | relative_url | replace: ':num', page | replace: page_one_link, '/' }}">Page {{ page }}</a></li>
+
       {% endif %}
+
     {% endfor %}
 
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}">{{ 'articles' | t: 'next' }} &raquo;</a>
-    {% else %}
-      <span>{{ 'articles' | t: 'next' }} &raquo;</span>
+    <li><a href="{{ paginator.next_page_path | relative_url }}">Next page &raquo;</a></li>
     {% endif %}
+    </ul>
   </nav>
+
   {% endif %}
   {%- endif -%}
-
