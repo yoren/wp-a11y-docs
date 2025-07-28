@@ -1,0 +1,8 @@
+{% assign extendedTitle  =  page.title %}
+
+{% if paginator.page > 1 %}
+    {% assign extendedTitle  =  extendedTitle | append: ", page " | append: paginator.page  | append: " of " | append: paginator.total_pages %}
+
+{% endif %}
+
+<title>{{ extendedTitle }}, {{ site.title }}</title>
