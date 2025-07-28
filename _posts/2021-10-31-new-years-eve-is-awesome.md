@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Well, I never heard it before, but it sounds uncommon nonsense"
-permalink: /articles/2025/uncommon/
-date:   2025-12-31
+title:  "The proper order of things is often a mystery to me"
+permalink: /articles/2021/welcome-to-jekyll/
+date:   2021-10-31
 parent: Articles
 author: Rian Rietveld
 categories: aap, noot, mies

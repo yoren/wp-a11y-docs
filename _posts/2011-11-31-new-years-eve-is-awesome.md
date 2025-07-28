@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Well, I never heard it before, but it sounds uncommon nonsense"
-permalink: /articles/2025/uncommon/
-date:   2025-12-31
+title:  "It would be so nice if something made sense for a change"
+permalink: /articles/2023/sense/
+date:   2023-11-31
 parent: Articles
 author: Rian Rietveld
 categories: aap, noot, mies

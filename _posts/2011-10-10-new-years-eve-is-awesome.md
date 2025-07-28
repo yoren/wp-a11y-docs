@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Well, I never heard it before, but it sounds uncommon nonsense"
-permalink: /articles/2025/uncommon/
-date:   2025-12-31
-parent: Articles
+title:  "Imagination is the only weapon in the war with reality."
+permalink: /articles/2011/imagination/
+date:   2011-10-10
 author: Rian Rietveld
 categories: aap, noot, mies
+parent: Articles
 excerpt: You’ll find this post in your `_posts` directory.
 description: To support in-page navigation, you can generate a Table of Contents (TOC) with links to headings, like the one shown above, as well as a link to the top of the page.
 ---

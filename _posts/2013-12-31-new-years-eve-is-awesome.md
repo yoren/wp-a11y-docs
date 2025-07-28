@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Well, I never heard it before, but it sounds uncommon nonsense"
-permalink: /articles/2025/uncommon/
-date:   2025-12-31
+title:  "No wise fish would go anywhere without a porpoise."
+permalink: /articles/2013/fish/
+date:   2013-12-31
 parent: Articles
 author: Rian Rietveld
 categories: aap, noot, mies

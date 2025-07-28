@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Well, I never heard it before, but it sounds uncommon nonsense"
-permalink: /articles/2025/uncommon/
-date:   2025-12-31
-parent: Articles
+title:  "Who in the world am I? Ah, that’s the great puzzle."
+permalink: /articles/2024/puzzle/
+date:   2024-10-31
 author: Rian Rietveld
+parent: Articles
 categories: aap, noot, mies
 excerpt: You’ll find this post in your `_posts` directory.
 description: To support in-page navigation, you can generate a Table of Contents (TOC) with links to headings, like the one shown above, as well as a link to the top of the page.
