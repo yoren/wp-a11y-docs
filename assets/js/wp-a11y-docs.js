@@ -170,17 +170,21 @@ function searchLoaded(index, docs) {
       }
     }
 
+    let screenReaderFeedback = document.getElementById('screen-reader-feedback');
+    screenReaderFeedback.innerText = "";
+
     if (results.length === 0) {
       var noResultsDiv = document.createElement('div');
       noResultsDiv.classList.add('search-no-result');
       noResultsDiv.innerText = 'No results found';
       searchResults.appendChild(noResultsDiv);
+      screenReaderFeedback.innerText = 'No results found';
 
     } else {
       var resultsList = document.createElement('ul');
       resultsList.classList.add('search-results-list');
       searchResults.appendChild(resultsList);
-
+      screenReaderFeedback.innerText = results.length + ' results found, tab to read them';
       addResults(resultsList, results, 0, 10, 100, currentSearchIndex);
     }
 
