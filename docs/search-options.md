@@ -1,5 +1,5 @@
 ---
-title: Search
+title: Search options
 nav_order: 7
 ---
 
