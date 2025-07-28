@@ -28,6 +28,23 @@
 
 {% endif %}
 
+{% if page.url contains "/articles/page" %}
+
+    {% capture link %}
+    <li class='breadcrumb-nav-list-item'><a href='{{ "/articles" | relative_url }}'>{{page.title}}</a></li>
+    {% endcapture %}
+    {% assign parentLinks  = parentLinks  |
+    split: ',' |
+    prepend: link |
+    replace: "]", "" |
+    replace: "[", "" |
+    replace: "\n", "" |
+    replace: "\", "" |
+    replace: '"', ""
+    %}
+    {% assign parentTitle = parent.parent %}
+
+{% endif %}
 
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
@@ -35,6 +52,6 @@
         {%- for item in parentLinks -%}
             {{ item }}
         {%- endfor -%}
-        <li class="breadcrumb-nav-list-item" aria-current="page">{{page.title}}</li>
+        <li class="breadcrumb-nav-list-item" aria-current="page">{{ extendedTitle }}</li>
     </ol>
 </nav>
