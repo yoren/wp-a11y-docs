@@ -14,12 +14,12 @@ jtd.removeEvent = function(el, type, handler) {
 }
 jtd.onReady = function(ready) {
   // in case the document is already rendered
-  if (document.readyState!='loading') ready();
+  if (document.readyState!=='loading') ready();
   // modern browsers
   else if (document.addEventListener) document.addEventListener('DOMContentLoaded', ready);
   // IE <= 8
   else document.attachEvent('onreadystatechange', function(){
-      if (document.readyState=='complete') ready();
+      if (document.readyState==='complete') ready();
   });
 }
 
@@ -41,7 +41,6 @@ function initNav() {
   const mainHeader = document.getElementById('main-header');
   const menuButton = document.getElementById('menu-button');
 
-  disableHeadStyleSheets();
 
   jtd.addEvent(menuButton, 'click', function(e){
     e.preventDefault();
@@ -49,7 +48,7 @@ function initNav() {
     if (menuButton.classList.toggle('nav-open')) {
       siteNav.classList.add('nav-open');
       mainHeader.classList.add('nav-open');
-      menuButton.ariaExpanded = true;
+      menuButton.ariaExpanded = "true";
     } else {
       siteNav.classList.remove('nav-open');
       mainHeader.classList.remove('nav-open');
@@ -57,40 +56,8 @@ function initNav() {
     }
   });
 
-  {%- if site.search_enabled != false and site.search.button %}
-  const searchInput = document.getElementById('search-input');
-  const searchButton = document.getElementById('search-button');
-
-  jtd.addEvent(searchButton, 'click', function(e){
-    e.preventDefault();
-
-    mainHeader.classList.add('nav-open');
-    searchInput.focus();
-  });
-  {%- endif %}
 }
 
-// The <head> element is assumed to include the following stylesheets:
-// - a <link> to /assets/css/just-the-docs-head-nav.css,
-//             with id 'jtd-head-nav-stylesheet'
-// - a <style> containing the result of _includes/css/activation.scss.liquid.
-// To avoid relying on the order of stylesheets (which can change with HTML
-// compression, user-added JavaScript, and other side effects), stylesheets
-// are only interacted with via ID
-
-function disableHeadStyleSheets() {
-  const headNav = document.getElementById('jtd-head-nav-stylesheet');
-  if (headNav) {
-    headNav.disabled = true;
-  }
-
-  const activation = document.getElementById('jtd-nav-activation');
-  if (activation) {
-    activation.disabled = true;
-  }
-}
-
-{%- if site.search_enabled != false %}
 // Site search
 
 function initSearch() {
@@ -101,26 +68,21 @@ function initSearch() {
     if (request.status >= 200 && request.status < 400) {
       var docs = JSON.parse(request.responseText);
 
-      lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
+      lunr.tokenizer.separator = "/[\\s/]+/";
 
       var index = lunr(function(){
         this.ref('id');
         this.field('title', { boost: 200 });
         this.field('content', { boost: 2 });
-        {%- if site.search.rel_url != false %}
-          this.field('relUrl');
-        {%- endif %}
+        this.field('relUrl');
         this.metadataWhitelist = ['position']
 
         for (var i in docs) {
-          {% include lunr/custom-index.js %}
           this.add({
             id: i,
             title: docs[i].title,
             content: docs[i].content,
-            {%- if site.search.rel_url != false %}
             relUrl: docs[i].relUrl
-            {%- endif %}
           });
         }
       });
@@ -139,15 +101,13 @@ function initSearch() {
 }
 
 function searchLoaded(index, docs) {
-  var index = index;
-  var docs = docs;
+
   var searchInput = document.getElementById('search-input');
   var searchResults = document.getElementById('search-results');
   var mainHeader = document.getElementById('main-header');
   var currentInput;
   var currentSearchIndex = 0;
 
-  {%- if site.search.focus_shortcut_key %}
   // add event listener on ctrl + <focus_shortcut_key> for showing the search input
   jtd.addEvent(document, 'keydown', function (e) {
     if ((e.ctrlKey || e.metaKey) && e.key === '{{ site.search.focus_shortcut_key }}') {
@@ -157,7 +117,6 @@ function searchLoaded(index, docs) {
       searchInput.focus();
     }
   });
-  {%- endif %}
 
   function showSearch() {
     document.documentElement.classList.add('search-active');
@@ -198,7 +157,7 @@ function searchLoaded(index, docs) {
       });
     });
 
-    if ((results.length == 0) && (input.length > 2)) {
+    if ((results.length === 0) && (input.length > 2)) {
       var tokens = lunr.tokenizer(input).filter(function(token, i) {
         return token.str.length < 20;
       })
@@ -211,7 +170,7 @@ function searchLoaded(index, docs) {
       }
     }
 
-    if (results.length == 0) {
+    if (results.length === 0) {
       var noResultsDiv = document.createElement('div');
       noResultsDiv.classList.add('search-no-result');
       noResultsDiv.innerText = 'No results found';
@@ -226,11 +185,11 @@ function searchLoaded(index, docs) {
     }
 
     function addResults(resultsList, results, start, batchSize, batchMillis, searchIndex) {
-      if (searchIndex != currentSearchIndex) {
+      if (searchIndex !== currentSearchIndex) {
         return;
       }
       for (var i = start; i < (start + batchSize); i++) {
-        if (i == results.length) {
+        if (i === results.length) {
           return;
         }
         addResult(resultsList, results[i]);
@@ -268,7 +227,7 @@ function searchLoaded(index, docs) {
       resultDoc.appendChild(resultDocTitle);
       var resultDocOrSection = resultDocTitle;
 
-      if (doc.doc != doc.title) {
+      if (doc.doc !== doc.title) {
         resultDoc.classList.add('search-result-doc-parent');
         var resultSection = document.createElement('div');
         resultSection.classList.add('search-result-section');
@@ -296,7 +255,7 @@ function searchLoaded(index, docs) {
             var previewEnd = position[0] + position[1];
             var ellipsesBefore = true;
             var ellipsesAfter = true;
-            for (var k = 0; k < {{ site.search.preview_words_before | default: 5 }}; k++) {
+            for (var k = 0; k < 5; k++) {
               var nextSpace = doc.content.lastIndexOf(' ', previewStart - 2);
               var nextDot = doc.content.lastIndexOf('. ', previewStart - 2);
               if ((nextDot >= 0) && (nextDot > nextSpace)) {
@@ -311,7 +270,7 @@ function searchLoaded(index, docs) {
               }
               previewStart = nextSpace + 1;
             }
-            for (var k = 0; k < {{ site.search.preview_words_after | default: 10 }}; k++) {
+            for (var k = 0; k < 10; k++) {
               var nextSpace = doc.content.indexOf(' ', previewEnd + 1);
               var nextDot = doc.content.indexOf('. ', previewEnd + 1);
               if ((nextDot >= 0) && (nextDot < nextSpace)) {
@@ -371,7 +330,7 @@ function searchLoaded(index, docs) {
         resultLink.appendChild(resultPreviews);
 
         var content = doc.content;
-        for (var j = 0; j < Math.min(previewPositions.length, {{ site.search.previews | default: 3 }}); j++) {
+        for (var j = 0; j < Math.min(previewPositions.length, 3); j++) {
           var position = previewPositions[j];
 
           var resultPreview = document.createElement('div');
@@ -388,12 +347,11 @@ function searchLoaded(index, docs) {
         }
       }
 
-      {%- if site.search.rel_url != false %}
       var resultRelUrl = document.createElement('span');
       resultRelUrl.classList.add('search-result-rel-url');
       resultRelUrl.innerText = doc.relUrl;
       resultTitle.appendChild(resultRelUrl);
-      {%- endif %}
+
     }
 
     function addHighlightedText(parent, text, start, end, positions) {
@@ -478,24 +436,12 @@ function searchLoaded(index, docs) {
   });
 
   jtd.addEvent(document, 'click', function(e){
-    if (e.target != searchInput) {
+    if (e.target !== searchInput) {
       hideSearch();
     }
   });
 }
-{%- endif %}
 
-// Switch theme
-
-jtd.getTheme = function() {
-  var cssFileHref = document.querySelector('[rel="stylesheet"]').getAttribute('href');
-  return cssFileHref.substring(cssFileHref.lastIndexOf('-') + 1, cssFileHref.length - 4);
-}
-
-jtd.setTheme = function(theme) {
-  var cssFile = document.querySelector('[rel="stylesheet"]');
-  cssFile.setAttribute('href', '{{ "assets/css/just-the-docs-" | relative_url }}' + theme + '.css');
-}
 
 // Note: pathname can have a trailing slash on a local jekyll server
 // and not have the slash on GitHub Pages
@@ -511,11 +457,11 @@ function navLink() {
   // The `permalink` setting may produce navigation links whose `href` ends with `/` or `.html`.
   // To find these links when `/` is omitted from or added to pathname, or `.html` is omitted:
 
-  if (pathname.endsWith('/') && pathname != '/') {
+  if (pathname.endsWith('/') && pathname !== '/') {
     pathname = pathname.slice(0, -1);
   }
 
-  if (pathname != '/') {
+  if (pathname !== '/') {
     navLink = document.getElementById('site-nav').querySelector('a[href="' + pathname + '"], a[href="' + pathname + '/"], a[href="' + pathname + '.html"]');
     if (navLink) {
       return navLink;
@@ -563,9 +509,8 @@ jtd.onReady(function(){
     activateNav();
     scrollNav();
   }
-  {%- if site.search_enabled != false %}
+
   initSearch();
-  {%- endif %}
 });
 
 // Copy button and tabindex on code blocks
@@ -611,5 +556,3 @@ jtd.onReady(function(){
 });
 
 })(window.jtd = window.jtd || {});
-
-{% include js/custom.js %}
