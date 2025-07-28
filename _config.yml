@@ -66,9 +66,6 @@ exclude:
   # theme test code
   - fixtures/
 
-# Set a path/url to a favicon that will be displayed by the browser
-favicon_ico: "/assets/images/favicon.ico"
-
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: true
@@ -106,9 +103,6 @@ nav_enabled: true
 # nav_sort: case_insensitive # default, equivalent to nil
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
-# External navigation links
-nav_external_links:
-
 # Show navigation error report
 nav_error_report: true # default is false/nil.
 
@@ -123,7 +117,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/rianrietveld/wp-a11y-docs" # the github URL for your repo
+gh_edit_repository: "" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
@@ -148,12 +142,7 @@ callouts:
     title: Warning
     color: red
 
-collections:
-  articles:
-    output: true
-
 plugins:
-  - jekyll-seo-tag
   - jekyll-github-metadata
   - jekyll-include-cache
   - jekyll-sitemap
