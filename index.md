@@ -13,13 +13,13 @@ Documentation about the accessibility of WordPress. For the community, by the co
 {: .fs-6 .fw-300 }
 
 ---
-This test website is build Jekyll, using GitHub pages and GitHub actions. 
-Follow the [progress in GitHub](https://github.com/rianrietveld/wp-a11y-docs).
-The theme WP A11y Docs is based on [Just The Docs](https://just-the-docs.github.io/just-the-docs/), and modified to make the site accessible (work in progress).
 
 {: .warning }
-> The text is dummy text, just to show what the site can do, taken from the Just The Docs theme. This website still has a11y issues, like missing screen reader feedback on the search option and the color contrast of code elements. Also, some styling needs to be improved on and the breadcrumbs are broken. Work in progress.
+> The text is still dummy and placeholder text, just to show what the site can do, taken from the Just The Docs theme. This website still needs a proper a11y audit and has probably some a11y issues. Work in progress.
 
+This test website is build Jekyll, using GitHub pages and GitHub actions.
+Follow the [progress in GitHub](https://github.com/rianrietveld/wp-a11y-docs).
+The theme WP A11y Docs is based on [Just The Docs](https://just-the-docs.github.io/just-the-docs/), and modified to make the site accessible (work in progress).
 
 ## Markdown kitchen sink
 Text can be **bold**, _italic_.
@@ -283,8 +283,8 @@ The following uses the [`<details>`](https://docs.github.com/en/get-started/writ
 
 This is content inside a `<details>` dropdown.
 
-- [ ] Apples
-- [ ] Oranges
-- [ ] Milk
+- Apples
+- Oranges
+- Milk
 
 </details>
