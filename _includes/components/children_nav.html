@@ -15,6 +15,9 @@
   it is included, and that may overwrite various variables.)
 {%- endcomment -%}
 
+  {%- if page.has_children == false -%}
+    {%- assign nav_children = "" | split: "" -%}
+  {%- else -%}
 
   {%- capture site_nav -%}
   {%- include_cached components/site_nav.html all=true -%}
@@ -40,6 +43,8 @@
   {%- if nav_child_start != nav_child_test -%}
     {%- assign nav_children = "" | split: "" -%}
   {%- endif -%}
+
+{%- endif -%}
 
 {%- unless nav_children -%}
 
