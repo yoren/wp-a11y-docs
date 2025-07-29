@@ -1,5 +1,6 @@
 ---
 title: Contributor Covenant Code of Conduct
+layout: default
 parent: How to contribute
 ---
 

@@ -10,9 +10,9 @@ excerpt: You’ll find this post in your `_posts` directory.
 description: To support in-page navigation, you can generate a Table of Contents (TOC) with links to headings, like the one shown above, as well as a link to the top of the page.
 ---
 
-# What is the use of a book without pictures or conversations?
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+{: .fs-6 .fw-300 }
 
 Jekyll requires blog post files to be named according to the following format:
 

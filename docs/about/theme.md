@@ -7,5 +7,5 @@ nav_order: 3
 
 # Theme of this website
 
-This website is powered by Jekyll and based on the theme Just the docs
-Just the docs: Copyright© 2017-2020 Patrick Marsceill. Distributed by an MIT licence. bla bla bla
+This website is powered by Jekyll and based on the theme [Just the Docs](https://just-the-docs.com/).
+Just the ddocs: Copyright© 2017-2020 Patrick Marsceill. Distributed by an MIT licence.
