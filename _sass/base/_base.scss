@@ -67,6 +67,10 @@ a {
   }
 }
 
+button {
+  cursor:pointer;
+}
+
 a:not([class]) {
   text-decoration: underline;
   text-underline-offset: 2px;
