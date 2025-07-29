@@ -56,4 +56,4 @@ For this the following changes were made:
 - Added `aria-current="page"` to links to the current page.
 - Removed anchor links before headings. The link was inside the heading, resulting in announcing the heading text twice. Maybe we find an accessible way later on.
 - Copy code button is now always visible (not only on hover) and has a larger clickable area. The copy action has now also screenreader feedback
-- The code block now have a tabindex="0".
+- The code blocks now have a tabindex="0".
