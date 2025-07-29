@@ -20,8 +20,13 @@ This will be a one design theme only, so all the changes will be done directly i
 
 For this the following changes were made:
 - Removed custom files and their references.
-- Removed redundant include files, like title.html.
+- Removed redundant include files.
 - Removed the nav-footer: took up too much space and added a second `<footer>`.
+- Added option for posts and post pagination.
+- Refactored the breadcrumbs for the posts.
+- Removed Just the Docs info pages and create placeholder text to match the actual site structure.
+- Set Ruby to 3.3.6
+- Added option to add a canonical URL.
 
 ### SCSS 
 
@@ -32,23 +37,23 @@ For this the following changes were made:
 - Replaced deprecated global built-in functions by Sass values (sass:map, sass:color, sass:list etc.).
 
 ### CSS color contrast issue
-- * placeholder: fixt color contrast and opacity
-* Fixed color contrast issues for text and non-text meaningful elements
+- placeholder: fixt color contrast and opacity.
+- Fixed color contrast issues for text and non-text meaningful elements.
 
 ## Search at the top of the page
 - Refactored the HTML of the form to make the HTML valid.
-  
+- Added screen reader feedback to announce number of search results.
 
 ### _config.yml
 
 - Removed Google Analytics Tracking settings.
+- Removed most variable because this is a static site
 
 ### Accessibility improvements
 
+- Moved the button to expand the submenus to after the submenu link, so the tab order is meaningful.
 - Changed aria-pressed by aria-expanded, see also issue [Change aria-pressed into aria-expanded for buttons connected to expandable content](https://github.com/just-the-docs/just-the-docs/issues/1680)
 - Added `aria-current="page"` to links to the current page.
-- Removed anchor links before headings. The link was inside the heading, resulting in announcing the heading text twice. 
-- Copy code button is now always visible (not only on hover) and has a larger clickable area
+- Removed anchor links before headings. The link was inside the heading, resulting in announcing the heading text twice. Maybe we find an accessible way later on.
+- Copy code button is now always visible (not only on hover) and has a larger clickable area. The copy action has now also screenreader feedback
 - The code block now have a tabindex="0".
-- Moved button to expand the submenus after the submenu link, to make the tab order meaningful.
-
