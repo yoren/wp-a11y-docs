@@ -22,7 +22,7 @@ repository: rianrietveld/wp-a11y-docs # for github-metadata
 # url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # prod env
-title: WP Accessibility Knowledge Base
+title: Draft WP Accessibility Knowledge Base
 baseurl: "/wp-a11y-docs" # the sub path of your site, e.g. /blog
 url: "https://rianrietveld.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 

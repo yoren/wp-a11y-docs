@@ -6,7 +6,7 @@ description: "Documentation about the accessibility of WordPress. For the commun
 permalink: /
 ---
 
-# WP Accessibility Knowledge Base
+# [draft] WP Accessibility Knowledge Base demo website
 {: .fs-9 }
 
 Documentation about the accessibility of WordPress. For the community, by the community.
