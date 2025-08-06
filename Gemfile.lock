@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    just-the-docs (0.10.1)
+    wp-a11y-docs (0.1)
       jekyll (>= 3.8.5)
       jekyll-include-cache
       jekyll-seo-tag (>= 2.0)
@@ -172,7 +172,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-sass-converter (~> 3.1.0)
   jekyll-sitemap
-  just-the-docs!
+  wp-a11y-docs!
 
 BUNDLED WITH
    2.5.9
