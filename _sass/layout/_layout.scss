@@ -16,7 +16,6 @@
     position: fixed;
     width: $nav-width-md;
     height: 100%;
-    border-right: $border $border-color;
     align-items: flex-end;
   }
 
@@ -83,7 +82,6 @@
 
 .main-header {
   z-index: 0;
-  border-bottom: $border $border-color;
 
   @include mq(md) {
     display: flex;
@@ -126,7 +124,6 @@
   @include mq(md) {
     height: $header-height;
     max-height: $header-height;
-    border-bottom: $border $border-color;
   }
 }
 
