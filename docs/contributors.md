@@ -7,17 +7,9 @@ nav_order: 7
 
 #  Contributors of WP Accessibility Knowledge Base
 
-{: .note }
-This is only for GitHub contributions at the moment, it should be possible to add also WP profiles or just text plus an avatar here.
-
-<ul class="list-style-none">
-{% for contributor in site.github.contributors %}
-
-  <li class="d-inline-block mr-1" class="text-small">
-     <a href="{{ contributor.html_url }}">
-        <img src="{{ contributor.avatar_url }}" width="32" height="32" alt=""><br />{{ contributor.login }}
-    </a>
-  </li>
-
-{% endfor %}
-</ul>
+## Credits and thanks go to:
+- <a href="https://wbvb.nl/">Paul van Buuren</a>
+- <a href="https://joedolson.com">Joe Dolson</a>
+- <a href="https://rianrietveld.com">Rian Rietveld</a>
+- <a href="https://www.caitlinderooij.com/">Caitlin de Rooij</a>
+- <a href="https://www.adviesvanannelies.nl/">Annelies Verhelst</a>

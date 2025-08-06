@@ -1,7 +1,6 @@
 ---
 title: Contributor Covenant Code of Conduct
 layout: default
-parent: How to contribute
 ---
 
 # Contributor Covenant Code of Conduct
@@ -33,7 +32,7 @@ community include:
 
 Examples of unacceptable behavior include:
 
-* The use of sexualised language or imagery, and sexual attention or advances of
+* The use of sexualized language or imagery, and sexual attention or advances of
   any kind
 * Trolling, insulting or derogatory comments, and personal or political attacks
 * Public or private harassment

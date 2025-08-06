@@ -5,7 +5,11 @@ nav_order: 4
 ---
 
 # Markdown kitchen sink
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+
+Text can be **bold**, _italic_.
+
+{: .note }
+We still need to examine and document the accessibility of the generated markdown features.
 
 [Link to another page]({{site.baseurl}}/).
 
@@ -13,7 +17,7 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 2
+## Header 2
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
@@ -124,56 +128,26 @@ Some text
 - level 1 item (ul)
   1. level 2 item (ol)
   1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
+  - level 3 item (ul)
+  - level 3 item (ul)
 - level 1 item (ul)
   1. level 2 item (ol)
   1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
+  - level 3 item (ul)
+  - level 3 item (ul)
   1. level 4 item (ol)
   1. level 4 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-
-### And a task list
-
-- [ ] Hello, this is a TODO item
-- [ ] Hello, this is another TODO item
-- [x] Goodbye, this item is done
-
-### Nesting task lists
-
-- [ ] level 1 item (task)
-   - [ ] level 2 item (task)
-   - [ ] level 2 item (task)
-- [ ] level 1 item (task)
-- [ ] level 1 item (task)
-
-### Nesting a ul in a task list
-
-- [ ] level 1 item (task)
-   - level 2 item (ul)
-   - level 2 item (ul)
-- [ ] level 1 item (task)
-- [ ] level 1 item (task)
-
-### Nesting a task list in a ul
-
-- level 1 item (ul)
-   - [ ] level 2 item (task)
-   - [ ] level 2 item (task)
-- level 1 item (ul)
+  - level 3 item (ul)
+  - level 3 item (ul)
 - level 1 item (ul)
 
 ### Small image
 
-![](../../assets/images/small-image.jpg)
+![small image of a library](assets/images/small-image.jpg)
 
 ### Large image
 
-![](../../assets/images/large-image.jpg)
+![large image of a library](assets/images/large-image.jpg)
 
 "[Wroclaw University Library digitizing rare archival texts](https://www.flickr.com/photos/97810305@N08/9401451269)" by [j_cadmus](https://www.flickr.com/photos/97810305@N08) is marked with [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=openverse).
 
@@ -220,27 +194,27 @@ Term
 
 Longer Term
 : Longer description of Term,
-  possibly more than one line
+possibly more than one line
 
 Term
 : First description of Term,
-  possibly more than one line
+possibly more than one line
 
 : Second description of Term,
-  possibly more than one line
+possibly more than one line
 
 Term1
 Term2
 : Single description of Term1 and Term2,
-  possibly more than one line
+possibly more than one line
 
 Term1
 Term2
 : First description of Term1 and Term2,
-  possibly more than one line
+possibly more than one line
 
 : Second description of Term1 and Term2,
-  possibly more than one line
+possibly more than one line
 
 ### More code
 
@@ -293,8 +267,8 @@ The following uses the [`<details>`](https://docs.github.com/en/get-started/writ
 
 This is content inside a `<details>` dropdown.
 
-- [ ] Apples
-- [ ] Oranges
-- [ ] Milk
+- Apples
+- Oranges
+- Milk
 
 </details>
