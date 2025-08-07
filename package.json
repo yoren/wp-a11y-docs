@@ -1,14 +1,14 @@
 {
   "name": "wp-a11y-docs",
-  "version": "0.0.1",
+  "version": "0.1",
   "description": "Jekyll theme for the WP Accessibility Knowledge Base",
   "repository": "wpaccessibility/wp-a11y-docs",
   "license": "MIT",
   "bugs": "https://github.com/wpaccessibility/wp-a11y-docs/issues",
   "devDependencies": {
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.6.0",
-    "stylelint": "^16.21.0",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.22.0",
     "stylelint-config-standard-scss": "^14.0.0"
   },
   "scripts": {
