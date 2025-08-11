@@ -25,8 +25,3 @@ Do you miss a topic, did you find an error or do you have a great idea? Create a
 We also would like to [invite you to contribute](/docs/contribute/) to this Knowledge Base.
 
 Let's make the web for everyone.
-
-
-
-
-
