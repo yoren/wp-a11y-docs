@@ -1,6 +1,6 @@
 {
   "name": "wp-a11y-docs",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "Jekyll theme for the WP Accessibility Knowledge Base",
   "repository": "wpaccessibility/wp-a11y-docs",
   "license": "MIT",
@@ -20,7 +20,7 @@
   },
   "stylelint": {
     "ignoreFiles": [
-      "assets/css/styles.scss",
+      "assets/css/styles.scss"
     ],
     "extends": [
       "stylelint-config-standard-scss"

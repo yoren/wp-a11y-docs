@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "wp-a11y-docs"
-  spec.version       = "0.1"
+  spec.version       = "0.0.1"
   spec.authors       = ["Rian Rietveld", "Patrick Marsceill", "Matthew Wang"]
   spec.email         = ["mail@rianrietveld.nl", "patrick.marsceill@gmail.com", "matt@matthewwang.me"]
   spec.name          = "wp-a11y-docs"
-  spec.version       = "0.1"
+  spec.version       = "0.0.1"
 
   spec.summary       = %q{An accessible theme for documentation, based on Just The Docs.}
   spec.homepage      = "https://github.com/wpaccessibility/wp-a11y-docs"
