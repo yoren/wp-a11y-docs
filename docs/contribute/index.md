@@ -11,7 +11,7 @@ Do you want to help maintaining and extending this website?
 {: .note }
 Please note: we use GitHub to maintain and extend the content of the knowledge base. Creating a GitHub account is free. If you want to contribute please choose Sign Up on the [GitHub homepage](https://github.com).
 
-## Write or audit content for the knowledge base
+## Write or review content for the knowledge base
 
 Starting August 22nd, '25 we will publish topics to be written for the knowledge base [labeled documentation](https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Adocumentation) in our GitHub repository.
 
