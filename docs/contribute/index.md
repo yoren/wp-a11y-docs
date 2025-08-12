@@ -9,11 +9,11 @@ nav_order: 4
 Do you want to help maintaining and extending this website? 
 
 {: .note }
-Please note: we work with GitHub to maintain en extent the content of the knowledge base. Creating a GitHub account is free. If you want to contribute please choose Sign Up on the [GitHub homepage](https://github.com).
+Please note: we use GitHub to maintain and extend the content of the knowledge base. Creating a GitHub account is free. If you want to contribute please choose Sign Up on the [GitHub homepage](https://github.com).
 
 ## Write or audit content for the knowledge base
 
-From August 22, '25 we will publish topics to be written for the knowledge base [labeled documentation](https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Adocumentation) in our GutHub repository.
+Starting August 22nd, '25 we will publish topics to be written for the knowledge base [labeled documentation](https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Adocumentation) in our GitHub repository.
 
 You can also check the [WP A11y Docs project board](https://github.com/orgs/wpaccessibility/projects/3) and look through the issues in the **Todo** column.
 
@@ -42,5 +42,7 @@ Your name or your company name will be added to the sponsor list. [Contact Rian 
 
 ## Improve this website
 
-WPaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content. A website is never finished and there is always one more bug. If you want to help improve this website, please check out the issues in GitHub [labeled website](https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Awebsite).
+WPaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content, The theme is based on the Jekyll theme [Just the Docs](https://just-the-docs.com/). For the changes made in Just the Docs, please read the [Changelog for Release v0.1](/CHANGELOG/release-v01).
+
+A website is never finished and there is always one more bug. If you want to help improve this website, please check out the issues in GitHub [labeled website](https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Awebsite).
 
