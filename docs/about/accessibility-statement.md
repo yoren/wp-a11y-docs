@@ -8,7 +8,7 @@ nav_order: 2
 
 # Accessibility statement
 
-We aim for the latest recommended version of the Wab Content Accessibility Guidelines (WCAG) level AA, at this moment that is [WCAG 2.2 AA](https://www.w3.org/WAI/WCAG22/quickref/).
+We aim for the latest recommended version of the Web Content Accessibility Guidelines (WCAG) level AA, at this moment that is [WCAG 2.2 AA](https://www.w3.org/WAI/WCAG22/quickref/).
 
 Did you find an accessibility issue or do you have problems using this website?
 Please inform us!
