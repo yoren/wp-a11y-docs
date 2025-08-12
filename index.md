@@ -15,7 +15,7 @@ Documentation about accessibility for WordPress users and creators. For the comm
 ---
 
 {: .warning }
-Please note: this website is work in progress and is still in the setup phase. This knowledge base has no content yet and the site needs an accessibility audit. Please visit, for now, the documentation on the [Make WordPress Accessible Handbook](https://make.wordpress.org/accessibility/handbook/).
+Please note: this website is a work in progress and is still in the setup phase. This knowledge base has no content yet and the site needs an accessibility audit. Please visit, for now, the documentation on the [Make WordPress Accessible Handbook](https://make.wordpress.org/accessibility/handbook/).
 
 This website aims to provide you with answers about WordPress and accessibility. How do you design and create an accessible website or plugin? How do you write accessible content? What do you need to know to comply with international legislation? 
 
