@@ -4,24 +4,28 @@ layout: default
 nav_order: 4
 ---
 
-# How to contribute
+# How to contribute to the Knowledge Base
 
 Do you want to help maintaining and extending this website? 
 
 {: .note }
-Please note: we use GitHub to maintain and extend the content of the knowledge base. Creating a GitHub account is free. If you want to contribute please choose Sign Up on the [GitHub homepage](https://github.com).
+Please note: we use GitHub to maintain and extend the content of the knowledge base. A [GitHub account](https://github.com) is free.
 
 ## Write or review content for the knowledge base
 
 Starting August 22nd, '25 we will publish topics to be written for the knowledge base [labeled documentation](https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Adocumentation) in our GitHub repository.
 
-You can also check the [WP A11y Docs project board](https://github.com/orgs/wpaccessibility/projects/3) and look through the issues in the **Todo** column.
+There are several ways can contribute to the documentation:
+- Create a new [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) and share your ideas.
+- Pick an issue in the [WP A11y Docs project board](https://github.com/orgs/wpaccessibility/projects/3) from the **Todo** column.
+- Add a comment with a GitHub issue you have an opinion about.
+- Join the Accessibility table at a WordCamp contributor day and share your ideas.
+- Place a comment in the [Make WordPress #accessibility-docs Slack channel](https://wordpress.slack.com/archives/C6PK2QCTY).
+- Create a [GitHub pull request](/docs/contribute/pull-requests.md).
 
-We will write manuals on how to deliver that content:
+If you need help, feel free to reach out to us by [opening an issue](https://github.com/wpaccessibility/wp-a11y-docs/issues) with your question. 
 
-- as a comment with the related GitHub issue.
-- as a GitHub Pull Request on GitHub.
-- as a GitHub Pull Request with a local install.
+Please respect our [Code of Conduct]().
 
 ## Audit the accessibility of this website
 
@@ -44,5 +48,5 @@ Your name or your company name will be added to the sponsor list. [Contact Rian 
 
 WPaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content, The theme is based on the Jekyll theme [Just the Docs](https://just-the-docs.com/). For the changes made in Just the Docs, please read the [Changelog for Release v0.1](/CHANGELOG/release-v01).
 
-A website is never finished and there is always one more bug. If you want to help improve this website, please check out the issues in GitHub [labeled website](https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Awebsite).
+A website is never finished and there is always one more bug. If you want to help improve this website, please check out the issues in GitHub [labeled website](https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Awebsite). Read how to do a local install in the page [GitHub pull requests for the Knowledge Base](/docs/contribute/pull-requests/)
 
