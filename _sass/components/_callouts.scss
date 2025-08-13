@@ -30,6 +30,7 @@ blockquote.highlight-title {
   border-left: $border-radius solid $yellow-300;
   border-radius: $border-radius;
   padding: 0.8rem;
+
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
@@ -101,6 +102,7 @@ blockquote.important-title {
   border-left: $border-radius solid $blue-300;
   border-radius: $border-radius;
   padding: 0.8rem;
+
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
@@ -172,6 +174,7 @@ blockquote.new-title {
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
   padding: 0.8rem;
+
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
@@ -243,6 +246,7 @@ blockquote.note-title {
   border-left: $border-radius solid $purple-300;
   border-radius: $border-radius;
   padding: 0.8rem;
+
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
@@ -314,6 +318,7 @@ blockquote.warning-title {
   border-left: $border-radius solid $red-300;
   border-radius: $border-radius;
   padding: 0.8rem;
+
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;

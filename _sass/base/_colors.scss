@@ -11,7 +11,7 @@ $sidebar-color: $white !default;
 $base-button-color: #f7f7f7 !default;
 $btn-primary-color: $wordpress-blue-000 !default;
 $code-background-color: $grey-lt-000 !default;
-$feedback-color: color.scale($sidebar-color, $lightness: -3.0909090909%);
+$feedback-color: color.scale($sidebar-color, $lightness: -3%);
 $feedback-color: color.adjust($sidebar-color, $lightness: -3%);
 $table-background-color: $white !default;
 $search-background-color: $white !default;
