@@ -41,4 +41,4 @@ Before commit use the linters: `npm run lint`
 
 If you made changed to the `_config.yml` file, run `bundle exec jekyll serve` again to apply the changes to the site.
 
-Documentation about Jekyll itself is on [jekyllrb.com](https://jekyllrb.com/docs/). The theme is based on the Jekyll theme [Just the docs](https://just-the-docs.github.io/just-the-docs/).
+Documentation about Jekyll itself is on [jekyllrb.com](https://jekyllrb.com/docs/). The theme is based on the Jekyll theme [Just the docs](https://just-the-docs.github.io/just-the-docs/). The changes made in Just the Docs are documented in the [Changelog for Release v0.1](/CHANGELOG/release-v01).

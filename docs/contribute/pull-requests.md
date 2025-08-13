@@ -41,24 +41,12 @@ bundle
 bundle exec jekyll serve 
 ```
 
-Open `http://127.0.0.1:4000/` in your favourite browser
+Open `http://127.0.0.1:4000/` in your favourite browser.
+
+All Knowledge Base files live in the /docs/ directory.
 
 Before commit use the linters: `npm run lint`.
 
 If you made changed to the `_config.yml` file, run `bundle exec jekyll serve` again to apply the changes to the site.
 
 Documentation about Jekyll itself is on [jekyllrb.com](https://jekyllrb.com/docs/). The theme is based on the Jekyll theme [Just the Docs](https://just-the-docs.com/). The changes made in Just the Docs are documented in the [Changelog for Release v0.1](/CHANGELOG/release-v01).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
