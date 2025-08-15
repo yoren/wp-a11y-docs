@@ -223,9 +223,11 @@
   font-weight: 600;
   text-decoration: none;
 }
+
 .site-nav > ul.nav-list:first-child > li:nth-child(1) > button svg {
   transform: rotate(-90deg);
 }
+
 .site-nav
   > ul.nav-list:first-child
   > li.nav-list-item:nth-child(1)

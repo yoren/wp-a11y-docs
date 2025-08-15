@@ -57,6 +57,7 @@
 
   &:focus {
     border-width: 3px;
+
     + .search-label .search-icon {
       color: $link-color;
     }
@@ -133,8 +134,7 @@
 
   @include mq(sm) {
     display: inline-block;
-    // width: 40%;
-    padding-right: $sp-2;
+    padding-right: $sp-2; // width: 40%;
     vertical-align: top;
   }
 }
@@ -182,7 +182,7 @@
 
 .search-result-previews {
   // display: none; just for now until I have the js of search figured out.
-  //display: block;
+  // display: block;
   display: none;
   padding-top: $sp-2;
   padding-bottom: $sp-2;
