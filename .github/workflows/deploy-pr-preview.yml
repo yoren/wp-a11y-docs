@@ -40,7 +40,7 @@ jobs:
           source-dir: ./_site
           preview-branch: gh-pages
           umbrella-dir: pr-preview
-          pages-base-url: wpaccessibility.org
+          pages-base-url: ideagrapes.com
           action: deploy
 
   cleanup-preview:
