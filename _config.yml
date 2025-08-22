@@ -68,9 +68,7 @@ exclude:
   # theme test code
   - fixtures/
 
-# Include CNAME file for GitHub Pages custom domain
-include:
-  - CNAME
+
 
 # Enable or disable the site search
 # Supports true (default) or false
