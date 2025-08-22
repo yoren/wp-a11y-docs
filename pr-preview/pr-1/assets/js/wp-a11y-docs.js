@@ -58,7 +58,7 @@ function initNav() {
 
 function initSearch() {
   var request = new XMLHttpRequest();
-  request.open('GET', '/pr-preview/pr-1/assets/js/search-data.json', true);
+  request.open('GET', '/wp-a11y-docs/pr-preview/pr-1/assets/js/search-data.json', true);
 
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
