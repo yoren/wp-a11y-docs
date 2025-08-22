@@ -42,6 +42,19 @@ jobs:
           umbrella-dir: pr-preview
           action: deploy
 
+      - name: Add CNAME file to gh-pages for custom domain
+        run: |
+          git fetch origin gh-pages:gh-pages || git checkout --orphan gh-pages
+          git checkout gh-pages
+          if [ ! -f CNAME ]; then
+            echo "wpaccessibility.org" > CNAME
+            git add CNAME
+            git -c user.name="github-actions[bot]" -c user.email="github-actions[bot]@users.noreply.github.com" commit -m "Add CNAME file for custom domain"
+            git push origin gh-pages
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   cleanup-preview:
     if: github.event.action == 'closed'
     runs-on: ubuntu-latest
