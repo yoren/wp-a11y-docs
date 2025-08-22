@@ -23,7 +23,7 @@ We'll provide documentation, effective examples (both what to do and what to avo
 
 Additionally, we are developing a pattern library with code examples. We aim to meet [WCAG 2.2 AA](https://www.w3.org/WAI/WCAG22/quickref/).
 
-Did we miss a topic? Did you find an error or have a great idea? Create an issue on our [GitHub repository wpaccessibility/wp-a11y-docs](https://github.com/wpaccessibility/wp-a11y-docs/issues/).
+Did we miss a topic? Did you find an error or have a great idea? Create an issue on our [GitHub repository yoren/wp-a11y-docs](https://github.com/yoren/wp-a11y-docs/issues/).
 
 We would like to [invite you to contribute](/docs/contribute/) to this Knowledge Base.
 
